@@ -33,14 +33,14 @@ const PostDate = styled.Text`
   margin-top: 2px;
 `;
 
-export const Post = ({ title, imageUrl, body }) => {
+export const Post = ({ title, imageUrl, createdAt }) => {
     return (
     <PostView>
-    <PostImage source={{ uri: 'https://i.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU' }} />
-    <PostDetails> 
-    <PostTitle>{title}</PostTitle>
-    <PostDate>{body}</PostDate>
-    </PostDetails>
+      <PostImage source={{ uri: imageUrl }} />
+      <PostDetails>
+        <PostTitle>{title}</PostTitle>
+        <PostDate>{createdAt}</PostDate>
+      </PostDetails>
     </PostView>
     )
 }
