@@ -8,8 +8,8 @@ export const Navigation = () => {
     return(
         <NavigationContainer> 
      <Stack.Navigator>
-     <Stack.Screen name="HomeScreen" component={Home} options={{ title: 'Новости' }} />
-        <Stack.Screen name="FullPostScreen" component={FullPost} options={{ title: 'Статья' }} />
+     <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'News' }} />
+        <Stack.Screen name="FullPost" component={FullPostScreen} options={{ title: 'Posts' }} />
     </Stack.Navigator>
     </NavigationContainer>
     )

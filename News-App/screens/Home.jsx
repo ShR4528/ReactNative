@@ -26,7 +26,7 @@ const fetchPosts = () => {
     })
     .catch((err) => {
       console.log(err);
-      Alert.alert('Alert', 'NaN');
+      Alert.alert('Alert', 'N');
     })
     .finally(() => {
       setIsLoading(false);
@@ -38,33 +38,30 @@ const fetchPosts = () => {
 
  if (isLoading) {
   return (
-   <View  
-   style={{
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-   }}>
-  <ActivityIndicator size="large" />   
-  <Text style={{ marginTop: 150 }}>Loading...</Text>
-  </View>
-  );
- }
-
-
-return (
-  <View>
- 
-    <FlatList 
-    refreshControl={ <RefreshControl refreshing={isLoading} onRefresh={fetchPosts} />}
-      data={items}
-      renderItem={({ item }) => (
-     <TouchableOpacity onPress={() => navigation.navigate('FullPost', { id: item.id, title: item.title } )}> 
-        <Post title={item.title}
-         imageUrl={item.imageUrl} 
-         createdAt={item.createdAt} />
-         </TouchableOpacity>
-    )}
-    />
+    <View
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+      <ActivityIndicator size="large" />
+      <Text style={{ marginTop: 15 }}>Loading...</Text>
     </View>
   );
 }
+
+return (
+  <View>
+    <FlatList
+      refreshControl={<RefreshControl refreshing={isLoading} onRefresh={fetchPosts} />}
+      data={items}
+      renderItem={({ item }) => (
+        <TouchableOpacity
+          onPress={() => navigation.navigate('FullPost', { id: item.id, title: item.title })}>
+          <Post title={item.title} imageUrl={item.imageUrl} createdAt={item.createdAt} />
+        </TouchableOpacity>
+      )}
+    />
+  </View>
+);
+};
