@@ -1,6 +1,10 @@
 # ReactNative
 # News-App
 
-![image](https://user-images.githubusercontent.com/107538948/202188252-49195860-0faa-4989-a713-227d17279df2.png)
-<img width="108" alt="Снимок экрана 2022-11-16 в 15 09 24" src="https://user-images.githubusercontent.com/107538948/202189192-33c36b41-a46f-4681-8140-8ba45bee5d1b.png">
+![image](
+<img width="108" alt="img1" src="https://user-images.githubusercontent.com/107538948/202189725-eefeb7b9-756c-4a99-b8a9-cd21ddef0738.png">
+
+<img width="138" alt="imgg" src="https://user-images.githubusercontent.com/107538948/202189737-d3e1d003-d7b6-4397-ac26-352f312b8c3e.png">
+<img width="117" alt="image" src="https://user-images.githubusercontent.com/107538948/202189753-6781da59-602c-4850-8cc7-975a361ee29f.png">
+
 )
